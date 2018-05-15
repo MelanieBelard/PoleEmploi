@@ -524,11 +524,11 @@
 }
 
 .main-menu{
-  margin-top: 30vh;
+  margin-top: 20vh;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  width: 40%;
 }
 .icone{
   font-size:80px;
@@ -547,12 +547,12 @@
   background:white!important;
   background-color:white!important;
   color: #ff5950;
-  height: 70px;
-  width: 70px;
+  height: 80px;
+  width: 80px;
   margin-left: 25px;
 }
 #footer .icone{
-  font-size:40px;
+  font-size:45px;
   padding-top:5px;
   margin-left: -2px;
 }
