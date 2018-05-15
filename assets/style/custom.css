@@ -1,0 +1,68 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    background: linear-gradient(to bottom right, #B68C62, #9B8D82);
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+#register-form .step {
+    display: none;
+    background-color: #fefefe;
+    box-shadow: 0 0 1px #aaa;
+    padding: 20px;
+}
+
+#register-form .step h2 {
+    color: #A98C72;
+    margin: 15px 0;
+    border-bottom: 1px solid #A98C72;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+#register-form .step .birthday-fills input,
+#register-form .step .birthday-fills select {
+    width: 30%;
+}
+
+#register-form .step .button-col {
+    height: 40px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+
+#register-form .step .step-button {
+    margin: auto;
+    padding: 15px;
+    width: 40%;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    transition: background ease 0.2s
+}
+
+#register-form .step .step-button:hover,
+#register-form .step .step-button.submit:hover {
+    background: linear-gradient(to bottom right, #9B8D82, #9B8D82);
+    color: #fefefe
+}
+
+#register-form .step .step-button {
+    color: #9B8D82;
+    border: solid 1px #9B8D82;
+    background: #fefefe;
+    border: none;
+}
+
+#register-form .step .step-button.submit {
+    background: linear-gradient(to bottom right, #9B8D82, #B68C62);
+    color: #fefefe;
+    border: none;
+}
