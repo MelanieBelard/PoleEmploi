@@ -504,42 +504,28 @@
   }
 }
 
-.boutonAccueil{
-  background: #ff5950;
-  color: white;
-  width: 53px;
-  height: 53px;
 
-}
 .btn-primary{
   background: #ff5950!important;
   border-color: #ff5950!important;
   border-radius: 100px!important;
-  height: 150px;
-  width: 150px;
+  height: 170px;
+  width: 170px;
  
 }
 .listMenu{
    margin-left: 55px;
 }
-
-.main-menu{
-  margin-top: 20vh;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-}
 .icone{
-  font-size:80px;
+  font-size:86px;
   padding-top:30px;
   height: 50px;
   width: 50px;
-  margin-left: -25px;
+  margin-left: -35px;
 }
 
 #footer{
-  position: absolute;
+  position: fixed;
   right: 5px;
   bottom: 5px;
 }
@@ -555,4 +541,10 @@
   font-size:45px;
   padding-top:5px;
   margin-left: -2px;
+}
+.container>ul{
+  margin-top: 10em;
+}
+.container>ul>li{
+  margin-top: 25px;
 }
