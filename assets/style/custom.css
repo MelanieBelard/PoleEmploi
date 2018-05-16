@@ -9,14 +9,14 @@ body {
     align-items: center;
 }
 
-#register-form .step {
+#register-form .step, #accueil .step {
     display: none;
     background-color: #fefefe;
     box-shadow: 0 0 1px #aaa;
     padding: 20px;
 }
 
-#register-form .step h2 {
+#register-form .step h2, , #accueil .step h2 {
     color: #A98C72;
     margin: 15px 0;
     border-bottom: 1px solid #A98C72;
@@ -38,7 +38,7 @@ body {
     align-items: center;
 }
 
-#register-form .step .step-button {
+#register-form .step .step-button, , #accueil .step .step-button {
     margin: auto;
     padding: 15px;
     width: 40%;
@@ -46,6 +46,10 @@ body {
     text-transform: uppercase;
     font-weight: 900;
     transition: background ease 0.2s
+    color: #9B8D82;
+    border: solid 1px #9B8D82;
+    background: #fefefe;
+    border: none;
 }
 
 #register-form .step .step-button:hover,
@@ -54,12 +58,6 @@ body {
     color: #fefefe
 }
 
-#register-form .step .step-button {
-    color: #9B8D82;
-    border: solid 1px #9B8D82;
-    background: #fefefe;
-    border: none;
-}
 
 #register-form .step .step-button.submit {
     background: linear-gradient(to bottom right, #9B8D82, #B68C62);

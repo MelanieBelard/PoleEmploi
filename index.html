@@ -14,13 +14,29 @@
 
 
 <img id="logo" src="assets/img/header-logo-pole-emploi-mono.png"><a href="#"><span class="glyphicon glyphicon-align-justify" aria-hidden="true" style="font-size:20px;color: hsla(3, 100%, 66%, 8.);padding: 5px;position: fixed;margin-top:3px;"></span></a>
-<div class="container">
-	<ul style="list-style:none;" class="row">
+<div class="container" id="accueil">
+
+	<ul style="list-style:none;" class="row step" id="boutonsAccueil">
 		<li class="col-sm-5" style="float: left;text-align: center;"><a href="#"><span class="btn btn-primary btn-icon-only icon-label" style="text-align: center;"><span class="icone glyphicon glyphicon-user" aria-hidden="true" style="text-align: center;"></span></span><span class="btn-text" style="text-align: center;"><br>M'actualiser</span></a></li>
 		<li class="col-sm-5" style="float: left;text-align: center;"><a href="form.html" style="text-align: center;"><span class="btn btn-primary btn-icon-only icon-label" style="text-align: center;"><span class="icone glyphicon glyphicon-pencil" aria-hidden="true" style="text-align: center;"></span></span><span class="btn-text" style="text-align: center;"><br>Inscription</span></a></li>
-		<li class="col-sm-5" style="float: left;text-align: center;"><a href="#" style="text-align: center;"><span class="btn btn-primary btn-icon-only icon-label" style="text-align: center;"><span class="icone glyphicon glyphicon-book" aria-hidden="true" style="text-align: center;"></span></span><span class="btn-text" style="text-align: center;"><br>Dossier personnel</span></a></li>	
+		<li class="col-sm-5" style="float: left;text-align: center;"><a data-content="boutonsAccueil" href="#boutonsDossierPerso" class="step-button" style="text-align: center;"><span class="btn btn-primary btn-icon-only icon-label" style="text-align: center;"><span class="icone glyphicon glyphicon-book" aria-hidden="true" style="text-align: center;"></span></span><span class="btn-text" style="text-align: center;"><br>Dossier personnel</span></a></li>	
 		<li class="col-sm-5" style="float: left;text-align: center;"><a href="#" style="text-align: center;"><span class="btn btn-primary btn-icon-only icon-label" style="text-align: center;"><span class="icone glyphicon glyphicon-file" aria-hidden="true"></span></span><span class="btn-text" style="text-align: center;"><br>Emploi store</span></a></li>
 	</ul>
+
+
+  <ul style="list-style:none;" class="row" id="boutonsDossierPerso">
+    <li class="col-sm-5" style="float: left;text-align: center;"><a href="form.html" style="text-align: center;"><span class="btn btn-primary btn-icon-only icon-label" style="text-align: center;"><span class="icone glyphicon glyphicon-pencil" aria-hidden="true" style="text-align: center;"></span></span><span class="btn-text" style="text-align: center;"><br>Inscription</span></a></li>
+    <li class="col-sm-5" style="float: left;text-align: center;"><a href="#" style="text-align: center;"><span class="btn btn-primary btn-icon-only icon-label" style="text-align: center;"><span class="icone glyphicon glyphicon-pencil" aria-hidden="true" style="text-align: center;"></span></span><span class="btn-text" style="text-align: center;"><br>Connexion</span></a></li>
+  </ul>
+
+  <ul style="list-style:none;" class="row" id="formConnexion">
+    <form>
+      <input type="text" name="name" placeholder="Numero sécu" class="form-control">
+      <input type="password" name="password" placeholder="Mot de passe" class="form-control">
+    </form>
+  </ul>
+
+
 
   <!-- Trigger the modal with a button -->
 	<a href="#" id="footer" data-toggle="modal" data-target="#help"><span class="btn btn-primary btn-icon-only icon-label"><span class="icone glyphicon glyphicon-headphones" aria-hidden="true"></span></span><span class="btn-text"><br>Demander de l'aide</span></a>
