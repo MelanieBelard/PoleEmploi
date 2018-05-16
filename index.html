@@ -1,29 +1,112 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <link rel="icon" href="assets/img/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="assets/style/style.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="assets/js/script.js" ></script>
-    <title>Pôle Emploi PILA</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="assets/img/favicon.ico">
+  <link rel="stylesheet" type="text/css" href="assets/style/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/style/custom.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <title>Pôle Emploi PILA</title>
 </head>
-<body>
+<body class="index">
 
 
-<img id="logo" src="assets/img/header-logo-pole-emploi-mono.png"><a href="#"><span class="glyphicon glyphicon-align-justify" aria-hidden="true" style="font-size:20px;color: hsla(3, 100%, 66%, 8.);padding: 5px;position: fixed;margin-top:3px;"></span></a>
-<div class="container">
-	<ul style="list-style:none;" class="row">
-		<li class="col-sm-5" style="float: left;text-align: center;"><a href="#"><span class="btn btn-primary btn-icon-only icon-label" style="text-align: center;"><span class="icone glyphicon glyphicon-user" aria-hidden="true" style="text-align: center;"></span></span><span class="btn-text" style="text-align: center;"><br>M'actualiser</span></a></li>
-		<li class="col-sm-5" style="float: left;text-align: center;"><a href="form.html" style="text-align: center;"><span class="btn btn-primary btn-icon-only icon-label" style="text-align: center;"><span class="icone glyphicon glyphicon-pencil" aria-hidden="true" style="text-align: center;"></span></span><span class="btn-text" style="text-align: center;"><br>Inscription</span></a></li>
-		<li class="col-sm-5" style="float: left;text-align: center;"><a href="#" style="text-align: center;"><span class="btn btn-primary btn-icon-only icon-label" style="text-align: center;"><span class="icone glyphicon glyphicon-book" aria-hidden="true" style="text-align: center;"></span></span><span class="btn-text" style="text-align: center;"><br>Dossier personnel</span></a></li>	
-		<li class="col-sm-5" style="float: left;text-align: center;"><a href="#" style="text-align: center;"><span class="btn btn-primary btn-icon-only icon-label" style="text-align: center;"><span class="icone glyphicon glyphicon-file" aria-hidden="true"></span></span><span class="btn-text" style="text-align: center;"><br>Emploi store</span></a></li>
-	</ul>
+  <img id="logo" src="assets/img/header-logo-pole-emploi-mono.png" style="position: fixed;">
+    <a data-content="#boutonsAccueil" href="#">
+      <span class="glyphicon glyphicon-align-justify" aria-hidden="true" style="font-size:20px;color: hsla(3, 100%, 66%, 8.);padding: 5px;position: fixed;margin-top:3px;margin-left: 150px;">
+    </span>
+  </a>
+  <div class="container" id="accueil">
+
+   <ul style="list-style:none;" class="row step" id="boutonsAccueil">
+    <li class="col-sm-6" style="float: left;text-align: center;">
+        <a data-content="#boutonsAccueil" href="#" class="step-button">
+        <span class="btn btn-primary btn-icon-only icon-label" style="text-align: center;">
+        <span class="icone glyphicon glyphicon-user" aria-hidden="true" style="text-align: center;">
+      </span>
+    </span>
+      <span class="btn-text" style="text-align: center;">
+        <br>M'actualiser</span>
+    </a>
+    </li>
+    <li class="col-sm-6" style="float: left;text-align: center;">
+      <a data-content="#boutonsAccueil" href="form.html" class="step-button" style="text-align: center;">
+      <span class="btn btn-primary btn-icon-only icon-label" style="text-align: center;">
+        <span class="icone glyphicon glyphicon-pencil" aria-hidden="true" style="text-align: center;">
+        </span>
+      </span>
+      <span class="btn-text" style="text-align: center;">
+      <br>Inscription</span>
+      </a>
+    </li>
+    <li class="col-sm-6" style="float: left;text-align: center;">
+        <a data-content="#boutonsAccueil" href="#dossier-perso" data-content="boutonsAccueil" href="#boutonsDossierPerso" class="step-button" style="text-align: center;">
+        <span class="btn btn-primary btn-icon-only icon-label" style="text-align: center;">
+        <span class="icone glyphicon glyphicon-book" aria-hidden="true" style="text-align: center;">
+      </span>
+    </span>
+      <span class="btn-text" style="text-align: center;">
+        <br>Dossier personnel</span>
+    </a>
+    </li>	
+    <li class="col-sm-6" style="float: left;text-align: center;">
+        <a data-content="#boutonsAccueil" href="#" style="text-align: center;" class="step-button">
+        <span class="btn btn-primary btn-icon-only icon-label" style="text-align: center;">
+        <span class="icone glyphicon glyphicon-file" aria-hidden="true">
+      </span>
+    </span>
+      <span class="btn-text" style="text-align: center;">
+        <br>Emploi store</span>
+    </a>
+    </li>
+
+    <li class="col-sm-6" style="float: left;text-align: center;">
+        <a data-content="#boutonsAccueil" href="form.html" style="text-align: center;" class="step-button">
+        <span class="btn btn-primary btn-icon-only icon-label" style="text-align: center;">
+        <span class="icone glyphicon glyphicon-pencil" aria-hidden="true" style="text-align: center;">
+      </span>
+    </span>
+      <span class="btn-text" style="text-align: center;">
+        <br>Inscription</span>
+    </a>
+    </li>
+    <li class="col-sm-6" style="float: left;text-align: center;">
+        <a data-content="#boutonsAccueil" href="#" style="text-align: center;" class="step-button">
+        <span class="btn btn-primary btn-icon-only icon-label" style="text-align: center;">
+        <span class="icone glyphicon glyphicon-pencil" aria-hidden="true" style="text-align: center;">
+      </span>
+    </span>
+      <span class="btn-text" style="text-align: center;">
+        <br>Connexion</span>
+    </a>
+    </li>
+  </ul>
+
+<!--   <ul style="list-style:none;" class="row" id="formConnexion">
+    <form>
+      <input type="text" name="name" placeholder="Numero sécu" class="form-control">
+      <input type="password" name="password" placeholder="Mot de passe" class="form-control">
+    </form>
+  </ul> -->
+
+  <div id="dossier-perso" class="part">
+    <div class="back">
+      <a data-content="#dossier-perso" href="#boutonsAccueil" class="step-button">Retour</a>
+    </div>
+    dossier perso
+  </div>
+
+
 
   <!-- Trigger the modal with a button -->
-	<a href="#" id="footer" data-toggle="modal" data-target="#help"><span class="btn btn-primary btn-icon-only icon-label"><span class="icone glyphicon glyphicon-headphones" aria-hidden="true"></span></span><span class="btn-text"><br>Demander de l'aide</span></a>
+  <a data-content="#boutonsAccueil" href="#" id="footer" data-toggle="modal" data-target="#help">
+      <span class="btn btn-primary btn-icon-only icon-label">
+      <span class="icone glyphicon glyphicon-headphones" aria-hidden="true">
+    </span>
+  </span>
+    <span class="btn-text">
+      <br>Demander de l'aide</span>
+  </a>
   <!-- Modal -->
   <div class="modal fade" id="help" role="dialog">
     <div class="modal-dialog">
@@ -31,10 +114,10 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Demande d'aide envoyé</h4>
+          <h4 class="modal-title">Demande d'aide envoyée</h4>
         </div>
         <div class="modal-body">
-          <p>Merci d'attendre qu'un conseiller vienne vous aider.</p>
+          <p>Veuillez attendre qu'un conseiller vienne vous aider.</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Fermer</button>
@@ -44,16 +127,15 @@
     </div>
 
 
-</div>
-	
-
-
-
-
-
-
+  </div>
 
   
 </div>
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </body>
 </html>
