@@ -7,13 +7,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="assets/js/script.js" ></script>
     <title>Pôle Emploi PILA</title>
 </head>
 <body>
 
 
-<img id="logo" src="assets/img/header-logo-pole-emploi-mono.png"><a href="#"><span class="glyphicon glyphicon-align-justify" aria-hidden="true" style="font-size:20px;color: hsla(3, 100%, 66%, 8.);padding: 5px;position: fixed;margin-top:3px;"></span></a>
+<img id="logo" src="assets/img/header-logo-pole-emploi-mono.png" style="position: fixed;"><a href="#"><span class="glyphicon glyphicon-align-justify" aria-hidden="true" style="font-size:20px;color: hsla(3, 100%, 66%, 8.);padding: 5px;position: fixed;margin-top:3px;margin-left: 150px;"></span></a>
 <div class="container" id="accueil">
 
 	<ul style="list-style:none;" class="row step" id="boutonsAccueil">
@@ -71,5 +70,21 @@
 
   
 </div>
+    <script type="text/javascript">
+      if (window.location.hash == '') {
+          $("#accueil"+window.location.hash).show();
+      } else {
+          $("#accueil #boutonsAccueil").show();
+      } // À EFFACER
+
+      $("#accueil .step-button").click(function(){
+          var currentStep = $(this).data("content");
+          var nextStep    = $(this).attr('href');
+          $("#"+currentStep).hide();
+          $(nextStep).show();
+      });
+    </script>
+
+
 </body>
 </html>
