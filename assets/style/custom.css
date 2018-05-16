@@ -26,6 +26,11 @@ body {
     font-weight: 800;
 }
 
+#register-form .step select {
+    width: inherit;
+}
+
+
 #register-form .step .birthday-fills input,
 #register-form .step .birthday-fills select {
     width: 30%;
@@ -41,7 +46,6 @@ body {
 #register-form .step .step-button {
     margin: auto;
     padding: 15px;
-    width: 40%;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 900;
