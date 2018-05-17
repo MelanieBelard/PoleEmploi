@@ -2,6 +2,21 @@ html, body {
     height: 100%;
 }
 
+a       { text-decoration: none !important; }
+a:hover { text-decoration: none !important; }
+
+.back, .btn-text {
+    color: #FF5950;
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 45px;
+    font-weight: 900;
+}
+
+.back:hover, .btn-text:hover {
+    color: #1B2B66;
+}
+
 body.form {
     background: linear-gradient(to bottom right, #B68C62, #9B8D82);
     background-repeat: no-repeat;
